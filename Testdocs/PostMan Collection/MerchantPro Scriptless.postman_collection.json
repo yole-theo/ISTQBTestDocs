@@ -1,0 +1,321 @@
+{
+  "info": {
+    "_postman_id": "1fdfe961-1bc8-47bb-ba91-4c59a7df1f9e",
+    "name": "MerchantPro Scriptless",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39886728"
+  },
+  "item": [
+    {
+      "name": "Positive Endpoint",
+      "item": [
+        {
+          "name": "http://localhost:2014/api/Authentication/AuthCustomer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "X-API-KEY",
+                "value": "CLIENT_sk_KJ7sVk3p_T2Xn9rQ8yLfP5gRtWmY6zDh",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"username\": \"SmartKopor\",\r\n  \"password\": \"P@ssw0rd@123\" \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:2014/api/Authentication/AuthCustomer?X-API-KEY=CLIENT_sk_KJ7sVk3p_T2Xn9rQ8yLfP5gRtWmY6zDh&Content-Type=application/json",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "2014",
+              "path": [
+                "api",
+                "Authentication",
+                "AuthCustomer"
+              ],
+              "query": [
+                {
+                  "key": "X-API-KEY",
+                  "value": "CLIENT_sk_KJ7sVk3p_T2Xn9rQ8yLfP5gRtWmY6zDh"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:2014/api/Transaction/AccountEnquiry",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.D6gLVBDxOZhiS-qC8rACRf3bTq6MiXdHIsHvIAjbIZVhoeKM6qRA2RG9AlHL-WQvIwtWySs6Y2-sweQQj6o3d-7mC7CcIh6Q.9nXzmu4wulOKHKpcYHZOLA.7bwysUDtlL3YoL2zU9JS6vPudI9fM-BpFviryCwoJC2Scg25Vb5vXB7dlgt7k-ShsjmffwB4YIWgzY0O9IVl2wz6gESvazd03dDP77vZpq_LlgiP1VDtcMOXzDSksqTOAprvl17mvirFZ-MtVngcS1_HBd5pyMB2gsNbZjbcgJN61krAOKny0TYA71Pbim-Q-0qzQY0kY5X4lAoNTBeV7KHKNBDeYjKyMRKQdcE_FTHtjwKWgZfTIL00fusRPnUBQDqsOfgi9nHtekxFcxqmHQl5RgtHGUsqWMomJ3g3nJ8d_j5Nrp6-diG5LlctY8CN-uqYaMxmVGfnae1BWgW5f8eQw-sFlcm8UbLRCPmhF53lA_vtnG4fDqb13uc0ckENHRkdjN9CQXoS9hjeUYKvw2sEkjD3UB7jq6sPlOuOVW3H82VmOZpJoPoeHIU2OQPXCA75mxkrzZKnsWyJxCz8TTGtELF8JnM0pYY1pYliSIB0JjqBlwbLnU06c5jgYKAAd9SqqwAvKBOLliWOkMci6YMswOWyfdHAG1hW-WF8WkkQoQydN6WJnrIft69w3Ke7oMJ-ppn_Dy-khMH_Cdc7Xv-sc4DnQWwvWmyJD9NyU-v-k8ezmxLT5iat0gAKzxZ5ycAtHuve_5suapMEkkX10kqkgev8zrYKAEQqxOkMVtTzRqUmdqQR6uPQCaya_xU_U-cRyS5523jec_HeT82Hhd3UQC-uCpXyHNBjaryUzqs1QgtIjnSfDfTQpmuzZU4f6iBbQ5hQ9qmP5XSEOqAylBCKIT99Q066dVsVbbN77aJad4SN-z34SA7n3qX_YJQHpTG253Lwcx4C7rRzo7TH4Ts5P1dD3H7B9K67hFvJs-imm78A5ScXlXkGUMzvYhWwNBFYwMW6w-Q1bHDUcqtIM8Teo-dIJ7v6OzFF4DYJUCCbuYGou8zaM6V8wmD3j0nPQj7wng2ffDMJvvtMC3n8NGe90kju0778mj8eBxly9fNzkwWpYtUcLMN1SxaaWxtuWO_CEFaMcHLehAzNKCAioEQ1TRtfVa1p3d-C5Zxk7m0n2SDChShLpEEOd2qlQXyPT89SZ_ST5LkWju2QO5L2pivH5FWPi5Ec9ytE1Sf0L91I3ePOV1leubNbz1b2JDpMeP2ZN7ffeykwymlUjOIVdbb9C5iRdRXvDwA45xDbEkRGWVOResWLap2ZjQYh6Vnp.0I2Z8rCGIp6IDUF08HrQAcFn1WzRAUtOF2uWhpQt7ec",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "CLIENT_sk_KJ7sVk3p_T2Xn9rQ8yLfP5gRtWmY6zDh",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"accountNo\": \"6020169995\",//\r\n   \"currency\": null,\r\n   \"customerType\": \"C\" \r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:2014/api/Transaction/AccountEnquiry",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "2014",
+              "path": [
+                "api",
+                "Transaction",
+                "AccountEnquiry"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:2014/api/Transaction/AccountEnquiry",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.D6gLVBDxOZhiS-qC8rACRf3bTq6MiXdHIsHvIAjbIZVhoeKM6qRA2RG9AlHL-WQvIwtWySs6Y2-sweQQj6o3d-7mC7CcIh6Q.9nXzmu4wulOKHKpcYHZOLA.7bwysUDtlL3YoL2zU9JS6vPudI9fM-BpFviryCwoJC2Scg25Vb5vXB7dlgt7k-ShsjmffwB4YIWgzY0O9IVl2wz6gESvazd03dDP77vZpq_LlgiP1VDtcMOXzDSksqTOAprvl17mvirFZ-MtVngcS1_HBd5pyMB2gsNbZjbcgJN61krAOKny0TYA71Pbim-Q-0qzQY0kY5X4lAoNTBeV7KHKNBDeYjKyMRKQdcE_FTHtjwKWgZfTIL00fusRPnUBQDqsOfgi9nHtekxFcxqmHQl5RgtHGUsqWMomJ3g3nJ8d_j5Nrp6-diG5LlctY8CN-uqYaMxmVGfnae1BWgW5f8eQw-sFlcm8UbLRCPmhF53lA_vtnG4fDqb13uc0ckENHRkdjN9CQXoS9hjeUYKvw2sEkjD3UB7jq6sPlOuOVW3H82VmOZpJoPoeHIU2OQPXCA75mxkrzZKnsWyJxCz8TTGtELF8JnM0pYY1pYliSIB0JjqBlwbLnU06c5jgYKAAd9SqqwAvKBOLliWOkMci6YMswOWyfdHAG1hW-WF8WkkQoQydN6WJnrIft69w3Ke7oMJ-ppn_Dy-khMH_Cdc7Xv-sc4DnQWwvWmyJD9NyU-v-k8ezmxLT5iat0gAKzxZ5ycAtHuve_5suapMEkkX10kqkgev8zrYKAEQqxOkMVtTzRqUmdqQR6uPQCaya_xU_U-cRyS5523jec_HeT82Hhd3UQC-uCpXyHNBjaryUzqs1QgtIjnSfDfTQpmuzZU4f6iBbQ5hQ9qmP5XSEOqAylBCKIT99Q066dVsVbbN77aJad4SN-z34SA7n3qX_YJQHpTG253Lwcx4C7rRzo7TH4Ts5P1dD3H7B9K67hFvJs-imm78A5ScXlXkGUMzvYhWwNBFYwMW6w-Q1bHDUcqtIM8Teo-dIJ7v6OzFF4DYJUCCbuYGou8zaM6V8wmD3j0nPQj7wng2ffDMJvvtMC3n8NGe90kju0778mj8eBxly9fNzkwWpYtUcLMN1SxaaWxtuWO_CEFaMcHLehAzNKCAioEQ1TRtfVa1p3d-C5Zxk7m0n2SDChShLpEEOd2qlQXyPT89SZ_ST5LkWju2QO5L2pivH5FWPi5Ec9ytE1Sf0L91I3ePOV1leubNbz1b2JDpMeP2ZN7ffeykwymlUjOIVdbb9C5iRdRXvDwA45xDbEkRGWVOResWLap2ZjQYh6Vnp.0I2Z8rCGIp6IDUF08HrQAcFn1WzRAUtOF2uWhpQt7ec",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "CLIENT_sk_KJ7sVk3p_T2Xn9rQ8yLfP5gRtWmY6zDh",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"accountNo\": null,\r\n   \"currency\": \"SLE\", \t// as currneny of the settlement account SLE, USD etc.\r\n   \"customerType\": \"S\" \t //as S as settlement\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:2014/api/Transaction/AccountEnquiry",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "2014",
+              "path": [
+                "api",
+                "Transaction",
+                "AccountEnquiry"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:2014/api/Transaction/FundTransfer",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.imaBxxD6NXeLs--Af0Ce_U9UWx7q6gJsrl8ik-edubUtX2MO9h0tzgWCbwFdoExozK683IDc6X9YNYawR0WeV05-Ri8pnZql.PnB5wKeIQx4sdbsvVT2GqQ.6CVpQamnsRHbtqP_8z-SzIjnso2hJeHEIzTSRKpKYCTrhRH23aYa1G4Xi2HdRCcOhNJNYGTF8XI3KFcXtIukw3l1CvuLaxu0prjKhm7ExesYEHtEhMHtVpAQzcM8PRRzHTDCESi3F72VBVUeKt1Fx6gGHURs7UDuQKmsHqiBq_ASkkJcxcTEKA93zzL3drvtoqxH_iLsyNTZ1VQ-40BvIjunY6z93AL8pwCqI0iHT6ULy0d1POCBLavtJBtRn0y-MMpwUhmjD3sKrbwevKmxLIFmpE811jVY1Cpij9aD_hpCYGLFSDTxnOL1JPxJNBhc6AUaQ8h_M9d_0CK2ZrEf4DiJVG-3CIZz7S_LYnOp_n4taxZxKUXTwRB9fTrqjhXVIhzjuK9ZKi0a9xig6iReJ9eYXsqAL6K8lGGNVeftQ99Kysj3EwpTfNOVNHa1gP3ELoFmheLRzNXVrni2IpZyu-l10c3I4_3yDONWh42in0NcDqSPuBrylfJdGFJzi3VOD_jRRAm2ErYRUkLmzur8y4LK9FpA_n49KmmGBAT4F3DNJvafNUgOsn4SwugLMq3YpcX73Ri1oOG8qZb6xllvPf6m3gaABUiiZRm_ENjU1j_iBd5ZjY4UyEeNWfeq7CZvEgRlv8GjLZ91d5C0dlw1AueC_mqqPy0uc7BpzDcv9YMuVbJ-XwxLrIavqElGlYyVY5NNtS2WACHbw3nnaUs__J7IhaXVxJRFrOBxTSjaIvOuNPUao9jJvTJiBczdOPAr37gd8niLED-gRUKFXWKYPaKOJSbzXlWevTTlNvAKe5MFtor0S3HBpEII5IQBI60BlnllB_MAOTfjBqkk8WAh50e66UCaghgO7O9Yin7i9T8MI_fe6hAi9XdxgA1XQqoM8FIUgzZbCw4g4vvChXqJDE6vsopS5KPD_Kt5aFb_UIZL7e2rsDPnEkDMOb2uhS7p4LszvJp95K6GFpBoHd0Hq6OnD1cm7os3sVKHkwec81eCUW22y4pTeHTZynuqG0Jl9LkNpJRbsKXsQfuyFaReDDCbP-UISD4tQIrsvfTRyIvrjXuG1yxeoY9_uRjLoYhYoIZNv3Z0yq9d1LL2pdLvBTX96QEFe6To-3Z4RFjwbuK2Rshmz1zPpHXCMQmdajeDc0D1ZlAzXQbqiEJDwPXELO2-ssXemxR8131Q5vPscSrkz0LeBzwk2vVZqDdxVjPE.3YBFIQIJkN-rrNvsOLvtJN8YZomhJP21qHASYpZhvSU",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "CLIENT_sk_KJ7sVk3p_T2Xn9rQ8yLfP5gRtWmY6zDh",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "\r\n{\r\n   \"accountNo\": \"6020169995\",\r\n   \"transType\": \"B2S\",//S2B, B2S\r\n   \"amount\": 21,\r\n   \"transactionNo\": \"212\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:2014/api/Transaction/FundTransfer?Authorization=Bearer eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.ZFa1N7ZM8AtKDrdufhTGtBrsUTub5xbZNngeo0G-BMsWQVPh9NPMS6h_1A8Nm--FlrcaoepGMAgBiDGO46LR9fFgf5dIScE0.FKGzLuqpOKXtpyF5rECRtw.nsAElp2qSgxCO44SGrMbngoj6Ypp7XHFJ7rQfsBwb3RVJZEDUtRh61A6sCl5qJqHyHuGmNJAmQzSMLCt1aFv3YyLiHcFzPgC6NBx560Zonrebf5bvz_tc8t_tPR9uOVM5ki5vZOn-g7xkloFM0szoYiGj6AZ8g_fvMe12DkIVfDI_MMAHtYzUEwxG3_3kXm0BknkQvZU9AUtJtGoGu5qdpanj574snGTuuMFRmzwT9LWLeps7mZFxrSU2BFhNq-DhmG0QN0msijQX_6Co922GzH9YujRnYuCh4X_l0yObfDI9uBFPkUPeVq2MDnAXzlpXJFsBvwcZQ4-xLYvcCtrCDbU02Yfs53YakK3U-oQO43rudLeGc3TMvicF7B1VLuIFWfc9q9mSgHBDK38832YPyn9ovhWwFaoi-wAAF7cWDfdjhOcgh6uB2C3JYrRHwmktMNalaUb8YjeoM2GdAacaLelfUrphnHu3wMuf3lY4NnU-ZN7p4_jHChrDTQ7aVxTB11Qzh0yubCYKp--JZb73D3zMsMQzuha2AqJBPqw5NTAKVleApKo1Am-xUHCFVQM7M1-wf4XNcowKwuHZkzUudjsVCZnvpF4M9sWtC-Mj26gC7G0I6pmvWBTYk6p4NRRGOoZIQPpBFyXZ_MQ-qIxxhNndyZzqA8w98ln8po9cOL2AKhOcUtemICYlbGWw4zJFbg3NR82sjLLpVKQYmuvIurcnGiwPhht9zC8H3ig66fqnzOp0f-oExy5qYzNHXx8MJM3PIyzgvkoLI7KzFy3pBHjr6v-Lmz0jcOVsnrL5nPGGliT4dDbmN6VdvWr4g57Am2FHL2cUy78grtLhnjVxM0hhBIE8BlkD6Zy1EeWen60xp1hnKFJi-LaKKlr-fv2KdTqt_v00VU9pOue-Z6PGMVZ7XpAo--ISbXrq8o9g-nDhgUUAMOVfI8XtOrq3_7SFRrYMsALr87QBCGL0q_RC5uKCdJ9gN3ITzFdn295w2eIthLtpLKsNNxq2L3s3f1TOVTUFa7VAp81_VfAQky91sV-Cgp3qB7drXx9-JFtiXyPOZb1dIk9HtAeKbEd-J67dSwgEbSYGvNFIPS-4orpQGSYC9ROLu4H-m114QAT7r0hI04_QcLswCqi99pz1J9SERvaSoUUYC90SOFvDflHkVSKOryLcPjxg7EtkJ3HyfJAr9mScIvoz1Otc22waHWe.kuTKWY1l1SrbpfUUVnpLehxT8W06PD_kCHSYSAEUsRo",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "2014",
+              "path": [
+                "api",
+                "Transaction",
+                "FundTransfer"
+              ],
+              "query": [
+                {
+                  "key": "Authorization",
+                  "value": "Bearer eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.ZFa1N7ZM8AtKDrdufhTGtBrsUTub5xbZNngeo0G-BMsWQVPh9NPMS6h_1A8Nm--FlrcaoepGMAgBiDGO46LR9fFgf5dIScE0.FKGzLuqpOKXtpyF5rECRtw.nsAElp2qSgxCO44SGrMbngoj6Ypp7XHFJ7rQfsBwb3RVJZEDUtRh61A6sCl5qJqHyHuGmNJAmQzSMLCt1aFv3YyLiHcFzPgC6NBx560Zonrebf5bvz_tc8t_tPR9uOVM5ki5vZOn-g7xkloFM0szoYiGj6AZ8g_fvMe12DkIVfDI_MMAHtYzUEwxG3_3kXm0BknkQvZU9AUtJtGoGu5qdpanj574snGTuuMFRmzwT9LWLeps7mZFxrSU2BFhNq-DhmG0QN0msijQX_6Co922GzH9YujRnYuCh4X_l0yObfDI9uBFPkUPeVq2MDnAXzlpXJFsBvwcZQ4-xLYvcCtrCDbU02Yfs53YakK3U-oQO43rudLeGc3TMvicF7B1VLuIFWfc9q9mSgHBDK38832YPyn9ovhWwFaoi-wAAF7cWDfdjhOcgh6uB2C3JYrRHwmktMNalaUb8YjeoM2GdAacaLelfUrphnHu3wMuf3lY4NnU-ZN7p4_jHChrDTQ7aVxTB11Qzh0yubCYKp--JZb73D3zMsMQzuha2AqJBPqw5NTAKVleApKo1Am-xUHCFVQM7M1-wf4XNcowKwuHZkzUudjsVCZnvpF4M9sWtC-Mj26gC7G0I6pmvWBTYk6p4NRRGOoZIQPpBFyXZ_MQ-qIxxhNndyZzqA8w98ln8po9cOL2AKhOcUtemICYlbGWw4zJFbg3NR82sjLLpVKQYmuvIurcnGiwPhht9zC8H3ig66fqnzOp0f-oExy5qYzNHXx8MJM3PIyzgvkoLI7KzFy3pBHjr6v-Lmz0jcOVsnrL5nPGGliT4dDbmN6VdvWr4g57Am2FHL2cUy78grtLhnjVxM0hhBIE8BlkD6Zy1EeWen60xp1hnKFJi-LaKKlr-fv2KdTqt_v00VU9pOue-Z6PGMVZ7XpAo--ISbXrq8o9g-nDhgUUAMOVfI8XtOrq3_7SFRrYMsALr87QBCGL0q_RC5uKCdJ9gN3ITzFdn295w2eIthLtpLKsNNxq2L3s3f1TOVTUFa7VAp81_VfAQky91sV-Cgp3qB7drXx9-JFtiXyPOZb1dIk9HtAeKbEd-J67dSwgEbSYGvNFIPS-4orpQGSYC9ROLu4H-m114QAT7r0hI04_QcLswCqi99pz1J9SERvaSoUUYC90SOFvDflHkVSKOryLcPjxg7EtkJ3HyfJAr9mScIvoz1Otc22waHWe.kuTKWY1l1SrbpfUUVnpLehxT8W06PD_kCHSYSAEUsRo"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:2014/api/Transaction/ConfirmTransfer?Authorization=Bearer eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.md3v1VrJbPbchxxg2XveVbpmZXwUD3T-Gqm5_RsNvp-9MdJnrDbbeggm3s2EpUR8gZ_-z0e71ZyAGXZ2AiZkAaJGzZ-QmcMt",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.kmbWXb9fTiGSFZNjIxlYTinN8rxJqdWAIfFYYSJVFtYHTAiv9lxGox3C9gulQTOQ2QALkxwwlbBLYTQUadmg77BrRRQzVh2i.bPVUWGNSiyErpvroYw0yJg.E-ogsGd5aaf9xl1qfJsBRhNQjCHWcOww2zKZzLyaTrrU0r86k4Eh5eL-YAvWYS3PrMzC5SA_SX5_4ej_eHn4sZ_eNEj0MLN1rFzV9fEPteBCStwXjmdWnU0MJdVabqNudVpOE2aeFuu7-eugr61cZOgfC_eXzjfr4u-cDWs1Wz63T4go-2OmwHbMklVl8qGfapQLu9zP-0mlE7uxf5q7f6LQVRLG_kFhgKJ7b1sxuSzpfS_grOwbuusDyrb5tdX5XQVmKYf6rYGD45bGK4qA-3_mXZ7gCIKdxO_6gsjoZt8v9hoiWH17MZhD3n-OEkOV3nEhyi6UaX61t9o25XSGH7RdynkkoodALiAdzrG2SQAoPJRJSVjMHPcTSYIeTgm5RDHKQtvEHPqob5Ub3XZoQh8R-sOJFld8aW0V2txrmBEobSJimqx8FZBvwsf9Mi50zwyYJXeScQ-sv3mRtirdDEUF6L-wtO9XyQVPsPvb1iJNl96xPxiG7zanc5Y2DUzY9PBXj7exclru9GmN0LvJjDXUCYcc-5xwTyZPepYNnxwxcX1tBK92Jz15qjQtPxBfJWYT-cD3KR6M-pM2h6CRqU-7zPaJMzD7IeeOvwUh_7KFsWzNI1A4J6GrjhB-8MiqFJ82Wkp-hSQ2p3M0VdkTcRuZdRmra4R0NQUDsDnD2qJyLlOFCaJNIkjTYx6Wp-fFGJu2K3LcvsdP6SguMcRZIkfsWkuqvtH52TuYbzceeK0A7k9YqjRiv6Wzu8_ijrMjTikuDSHNS6-joWDbhEdDLjg9jt1gXYYkSt7-rlH-w8ND2Jn8iLYGMba4iNaVzqybM7zUK6tkbmbhWWsZ980Wjt6YFaaehrSSDkzp3WbcKqDkIND54QqRc1Zj9ij4VCYl2petd6bK-yhY9JZG1dAbq6BmSg-_-tTzWJPGHHXuJtrFPpXyUnokbRau7ziM1zdFohElRmYeQzk1JYiBN5KLHwBhbjCXhiEg2FSs5CsWtzmbdg2LgUoyXUx1yCtvCJllTJtTltRVjhwh5Vk_KFWs8I4XPEV04MW6FZC_kIdZs5QniQTmEEPdbYUwBYn734uzh1KJw6MVWelLT_TJepdWqmS0fKSmYvRQtgI3wr6Xu9TOZWAtfXqnqOdiVOjmK9uKp-Z_03wgR6sC9EtYVCqoGrzfDrR9mciVEi7k_len1Aq9a-1h8n2CsWhMQRqLzIE7.jhI0guyXEfAKP9POW3qKSzpwA4fnGqGJjKdxWt0yonk",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "CLIENT_sk_KJ7sVk3p_T2Xn9rQ8yLfP5gRtWmY6zDh",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"otp\": \"280347\",\r\n  \"transactionId\": \"4B1QmJBAsAaLln5kYbI+JA==\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:2014/api/Transaction/ConfirmTransfer",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "2014",
+              "path": [
+                "api",
+                "Transaction",
+                "ConfirmTransfer"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:2014/api/Transaction/ResendOtp",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.44fo2DbP5kdjeeb6SwLx70BtiADN0NRqZ3hr7AL3ivfhBQ8y99_k3g5ABI2j1joByam_CF1iyZxaOZeZYSEeWH42wL-Q1LOh.xwxJ_Npi0jKb_gj48ybZwg.sHuk9YKDsf36OIlS9a4GFSQyg2Kk6LXZWCmTmrtujlVVCzzzCY108UgapB6eUPFdyQ1HMrpL6c7yBg1wdt1ZBTf98jxCZZUhWDMYI-NnnBw-fXqOPXZlUQPPbp_tut8VnJmlTsw9f9U5EEHjw5TgTSbX3xIQs_r-D76KSMIe-KrUDEBb0DtntHttof2jlcAsWZn-WZLefpFc903xYJCSCis9l_vZ2Po3IoxnDUz9a1NXv67W3qhnWKTca8fkPTWVWjeNwbL4AIlS1PK11GTeykeW_2W0knLhQZAi8y_4vY4FgxOJ0oTL34dnqGndlIboAA-iQ_slPSRNsqcneQbdsztGJy_obRVj8wfMbNx91Osj4XwPWmLZunWMnrE29UUwPnMIEhrCdSr1-ncjyTUAJlyKrWebnoXLO-xyJiVy760jyigbzXBs6ILCHjjQV8rnWhyaVQMFrjhjWmwWHAxqNzcy8nPkRGxcSOUychiwjUFu8PCfkEix5MXFzQ6y54d1wY3GZKSi7Sz8BgpJ9WYYB1zMAjkARECCc8XsQUPYMnD1nW3CO4B2zaS-JZHexqlqEa9ZiN6cB8YtPHw_HjWEVg3WyVVI2A4Z0-Evq5gc5oeNJ7gmwF1KMembtpC4zCa6uY19NMnFP8gLRncX7xFzvsRh1UDEuUH48KaLtyICs07WrUSWCSl9AumWoGFwdyxNPg6qDHI0aXeo0L2KPIVpWwGyUiNIP4bDl73nAmPSYVFb5mIdbPNgWNnyGLxJ4oBu7ISnwe6SGeclRokTOTQGyGW2QueMBXqYGtt_9PWyzpPzqX4rdMkj1I8yL8ZBr6ALg-_uq3gK2pKOXIkHTpV6efSL6gpkaCxS8Ol5FqHAb3uGnCoYzsuLH6Xb39SrKozRIPM1HkTAyk-wq3uz-tvJCqTVSEuEnDKz9_EHBU5gCaeH8BXlpZCuLu2nwnUMc1889h0wRZQmtcjAxr5QFhtPKq4wf-uEYinGyAUdmIxbojO4RwIBERZ60ztX9tGr-FySqPS9ojfS6n8mmbEsJEfmyTJ_lhFojhdni-Ua9a9Z_Aay3mYvbQBE7dLRuNVqJGRlHBja0_geEuuSV4wktJexb1QKWV2QbrboIgY5jSnmB-WqLYq54EG1NEA4ikiSr1asx4JjBPBdc_e8kh-YAc5V8CjOQ0sB59uONkv1QWUA18l65lWM9Tr711wQWThm30km.eIiac4wKYm2_lpJs1ExEbQexENyGmaOTLZnP8s1i2UY",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "CLIENT_sk_KJ7sVk3p_T2Xn9rQ8yLfP5gRtWmY6zDh",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactionId\": \"4B1QmJBAsAaLln5kYbI+JA==\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:2014/api/Transaction/ResendOtp",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "2014",
+              "path": [
+                "api",
+                "Transaction",
+                "ResendOtp"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:2014/api/Transaction/TransactionStatus/MM250806-1",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwidHlwIjoiSldUIiwiY3R5IjoiSldUIn0.44fo2DbP5kdjeeb6SwLx70BtiADN0NRqZ3hr7AL3ivfhBQ8y99_k3g5ABI2j1joByam_CF1iyZxaOZeZYSEeWH42wL-Q1LOh.xwxJ_Npi0jKb_gj48ybZwg.sHuk9YKDsf36OIlS9a4GFSQyg2Kk6LXZWCmTmrtujlVVCzzzCY108UgapB6eUPFdyQ1HMrpL6c7yBg1wdt1ZBTf98jxCZZUhWDMYI-NnnBw-fXqOPXZlUQPPbp_tut8VnJmlTsw9f9U5EEHjw5TgTSbX3xIQs_r-D76KSMIe-KrUDEBb0DtntHttof2jlcAsWZn-WZLefpFc903xYJCSCis9l_vZ2Po3IoxnDUz9a1NXv67W3qhnWKTca8fkPTWVWjeNwbL4AIlS1PK11GTeykeW_2W0knLhQZAi8y_4vY4FgxOJ0oTL34dnqGndlIboAA-iQ_slPSRNsqcneQbdsztGJy_obRVj8wfMbNx91Osj4XwPWmLZunWMnrE29UUwPnMIEhrCdSr1-ncjyTUAJlyKrWebnoXLO-xyJiVy760jyigbzXBs6ILCHjjQV8rnWhyaVQMFrjhjWmwWHAxqNzcy8nPkRGxcSOUychiwjUFu8PCfkEix5MXFzQ6y54d1wY3GZKSi7Sz8BgpJ9WYYB1zMAjkARECCc8XsQUPYMnD1nW3CO4B2zaS-JZHexqlqEa9ZiN6cB8YtPHw_HjWEVg3WyVVI2A4Z0-Evq5gc5oeNJ7gmwF1KMembtpC4zCa6uY19NMnFP8gLRncX7xFzvsRh1UDEuUH48KaLtyICs07WrUSWCSl9AumWoGFwdyxNPg6qDHI0aXeo0L2KPIVpWwGyUiNIP4bDl73nAmPSYVFb5mIdbPNgWNnyGLxJ4oBu7ISnwe6SGeclRokTOTQGyGW2QueMBXqYGtt_9PWyzpPzqX4rdMkj1I8yL8ZBr6ALg-_uq3gK2pKOXIkHTpV6efSL6gpkaCxS8Ol5FqHAb3uGnCoYzsuLH6Xb39SrKozRIPM1HkTAyk-wq3uz-tvJCqTVSEuEnDKz9_EHBU5gCaeH8BXlpZCuLu2nwnUMc1889h0wRZQmtcjAxr5QFhtPKq4wf-uEYinGyAUdmIxbojO4RwIBERZ60ztX9tGr-FySqPS9ojfS6n8mmbEsJEfmyTJ_lhFojhdni-Ua9a9Z_Aay3mYvbQBE7dLRuNVqJGRlHBja0_geEuuSV4wktJexb1QKWV2QbrboIgY5jSnmB-WqLYq54EG1NEA4ikiSr1asx4JjBPBdc_e8kh-YAc5V8CjOQ0sB59uONkv1QWUA18l65lWM9Tr711wQWThm30km.eIiac4wKYm2_lpJs1ExEbQexENyGmaOTLZnP8s1i2UY",
+                "type": "text"
+              },
+              {
+                "key": "X-API-KEY",
+                "value": "CLIENT_sk_KJ7sVk3p_T2Xn9rQ8yLfP5gRtWmY6zDh",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:2014/api/Transaction/TransactionStatus/MM251118-1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "2014",
+              "path": [
+                "api",
+                "Transaction",
+                "TransactionStatus",
+                "MM251118-1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Negative Scenarios",
+      "item": []
+    }
+  ]
+}

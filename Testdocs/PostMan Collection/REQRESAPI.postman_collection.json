@@ -1,0 +1,218 @@
+{
+  "info": {
+    "_postman_id": "d83bcdb0-029b-4898-b009-2d78de31679a",
+    "name": "REQRESAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39886728"
+  },
+  "item": [
+    {
+      "name": "reqresGet2Pages",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "//Status Code Validation\r",
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "// 4️⃣ Validate Page Number\r",
+              "pm.test(\"Page number is 2\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.page).to.eql(2);\r",
+              "});\r",
+              "// 2️⃣ Response Time Check\r",
+              "pm.test(\"Response time is less than 800ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.above(800);\r",
+              "});\r",
+              "\r",
+              "\r",
+              "// 6️⃣ Validate Each User Has Required Fields\r",
+              "pm.test(\"Each user has id, email, first_name, last_name, avatar\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    \r",
+              "    jsonData.data.forEach(function(user) {\r",
+              "        pm.expect(user).to.have.property(\"id\");\r",
+              "        pm.expect(user).to.have.property(\"email\");\r",
+              "        pm.expect(user).to.have.property(\"first_name\");\r",
+              "        pm.expect(user).to.have.property(\"last_name\");\r",
+              "        pm.expect(user).to.have.property(\"avatar\");\r",
+              "    });\r",
+              "    });\r",
+              "///execution of setNextRequest\r",
+              "    pm.execution.setNextRequest(\"CreateUser\");\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_813811d3992d4d0584df581d17c21fba",
+            "equals": true,
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{BaseUrl}}api/users?page=2",
+          "host": [
+            "{{BaseUrl}}api"
+          ],
+          "path": [
+            "users"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "2"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CreateUser",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(201);\r",
+              "});\r",
+              "// 2️⃣ Response Time Check\r",
+              "pm.test(\"Response time is less than 800ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(800);\r",
+              "});\r",
+              "\r",
+              "var name = \"ILAYA\";\r",
+              "console.log(\"Name to be set is \" + name);\r",
+              "// Correct: key must be a string\r",
+              "pm.globals.set(\"UserName\", name);"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_813811d3992d4d0584df581d17c21fba",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"{{UserName}}\",\r\n    \"job\": \"Admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseUrl}}api/users",
+          "host": [
+            "{{BaseUrl}}api"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETEReq",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(204);\r",
+              "});\r",
+              "\r",
+              "// 2️⃣ Response Time Check\r",
+              "pm.test(\"Response time is less than 800ms\", function () {\r",
+              "    pm.expect(pm.response.responseTime).to.be.below(19);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "reqres_813811d3992d4d0584df581d17c21fba",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{BaseUrl}}api/users/1",
+          "host": [
+            "{{BaseUrl}}api"
+          ],
+          "path": [
+            "users",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}

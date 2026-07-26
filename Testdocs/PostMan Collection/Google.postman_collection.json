@@ -1,0 +1,40 @@
+{
+  "info": {
+    "_postman_id": "68fba986-3c05-4f48-89f8-164c1e26a726",
+    "name": "Google",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39886728"
+  },
+  "item": [
+    {
+      "name": "googleAPIs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://www.google.com/?q=ILAYA THEOPHILUS&name=ILAYA",
+          "protocol": "https",
+          "host": [
+            "www",
+            "google",
+            "com"
+          ],
+          "path": [
+            ""
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "ILAYA THEOPHILUS"
+            },
+            {
+              "key": "name",
+              "value": "ILAYA"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
