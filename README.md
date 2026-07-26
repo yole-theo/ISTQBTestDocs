@@ -1,4 +1,4 @@
-# ISTQB Test Documentation Repository
+# Test Documentation Repository
 
 ## Overview
 This repository contains ISTQB study materials, test documentation, and QA artifacts used for learning, practice, and software testing activities.
